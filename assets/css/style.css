@@ -48,3 +48,7 @@ box-shadow: 0 0 5px ;
   width: calc(100% / 10);
   border: 1px solid white;
 }
+
+.clicked {
+  background-color: #e40808;
+}
