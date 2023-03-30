@@ -15,7 +15,7 @@ generate.addEventListener('click', function(){
   const newDiv = document.createElement("div");
   grid.appendChild(newDiv);
   newDiv.classList.add('square');
-  newDiv.idElem = i;
+  newDiv.idElem = i + 1;
   newDiv.addEventListener('click', function(){
     newDiv.classList.toggle('clicked');
     console.log(newDiv.idElem);
