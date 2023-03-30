@@ -1,5 +1,4 @@
 
-
 const grid = document.getElementById('grid');
 const gridContainer = document.querySelector('.container-grid ')
 const generate = document.querySelector('.button-genera');
@@ -11,13 +10,14 @@ generate.addEventListener('click', function(){
   gridContainer.classList.remove('hide');
   levels.classList.add('hide');
   
-  for (let i = 0; i < levels.value; i++){
+  for (let i = 1; i <= levels.value; i++){
   const newDiv = document.createElement("div");
   grid.appendChild(newDiv);
   newDiv.classList.add('square');
-  newDiv.idElem = i + 1;
+  newDiv.idElem = i ;
   newDiv.addEventListener('click', function(){
-    newDiv.classList.toggle('clicked');
+    newDiv.classList.add('clicked');
+    
     console.log(newDiv.idElem);
     })
 
